@@ -15,7 +15,7 @@ public class UserDaoJDBCImpl implements UserDao {
             "age TINYINT)";
     private static final String INSERT = "INSERT INTO users (name, lastName, age) VALUES (?, ?, ?)";
     private static final String DELETE = "DELETE FROM users WHERE id = ?";
-    Connection connection = Util.getConnection();
+    private final Connection connection = Util.getConnection();
 
     public UserDaoJDBCImpl() {
     }
