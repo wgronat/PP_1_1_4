@@ -14,7 +14,7 @@ public class UserDaoHibernateImpl implements UserDao {
             "lastName VARCHAR(255)," +
             "age TINYINT)";
 
-    SessionFactory sessionFactory = Util.getSessionFactory();
+    private final SessionFactory sessionFactory = Util.getSessionFactory();
 
     public UserDaoHibernateImpl() {
     }
